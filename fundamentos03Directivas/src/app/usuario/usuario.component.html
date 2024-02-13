@@ -1,0 +1,11 @@
+<h1>Login</h1>
+ @if(estaLogeado){
+<p>Bienvenido a nuestra web {{nombreUsuario}}</p>
+<img src="https://github.com/FaleteRusso.png"alt="foto">
+ } @else{
+    <p>Inicie sesion!!</p>
+    <button (click)="cambiarValoor()">Iniciar Sesion</button>
+<app-registro></app-registro>
+   }
+
+  >
