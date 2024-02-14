@@ -8,7 +8,7 @@ import { Component,Input } from '@angular/core';
   styleUrl: './detalefactura.component.css'
 })
 export class DetalefacturaComponent {
-  @Input()productoDetalleFactura:any = '';
+  @Input()productoDetalleFactura:string = '';
   productos:string[]=[];
 
   agregar():void{

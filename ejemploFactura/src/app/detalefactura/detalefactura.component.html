@@ -1,8 +1,10 @@
+<br>
+<button (click)="agregar()">Añadir producto a detalle</button>
 <h2>Detalle de factura</h2>
 
-<button (click)="agregar()">Añadir producto</button>
+
 <p>{{productoDetalleFactura}}</p>
-<h3>Datos del Array</h3>
+<h3>Datos en detalle de factura</h3>
 <ol>
 @for (elemento of productos; track $index){
 <li>{{elemento}}</li>
