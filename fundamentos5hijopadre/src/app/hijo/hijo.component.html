@@ -1,1 +1,7 @@
-<p>hijo works!</p>
+<h2>Lista de nuestros productos</h2>
+<p>*haga click en los productos que quiera añadir a la lista</p>
+<ol>
+    @for (elemento of productos; track $index){
+        <li (click)="pasarAPadre(elemento)">{{elemento}}</li>
+    }
+</ol>

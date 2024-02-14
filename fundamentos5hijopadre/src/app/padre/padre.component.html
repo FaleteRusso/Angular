@@ -1,1 +1,7 @@
-<p>padre works!</p>
+<h3>Productos de la cesta</h3>
+<ul>
+@for (elemento of productoCesta; track $index){
+    <li>{{elemento}}</li>
+}
+</ul>
+<app-hijo (llamadaPadre)="recogerDato($event)"></app-hijo>
