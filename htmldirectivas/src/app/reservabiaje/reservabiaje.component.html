@@ -1,0 +1,33 @@
+<h1>Reserva viaje</h1>
+<label>Ciudad de origen: </label>
+<select  [(ngModel)]="cOrigen">
+@for(elemento of ciudades; track $index){
+<option value="{{elemento}}">{{elemento}}</option>
+}
+</select>
+<br>
+<label>Ciudad de destino: </label>
+<select  [(ngModel)]="cDestino">
+    
+@for(elemento of ciudades; track $index){
+    @if (elemento!==cOrigen) {
+<option value="{{elemento}}">{{elemento}}</option>
+    }
+
+}
+</select>
+<br>
+<label>Fecha Ida: </label>
+    <input type="date" value="fechaIda" [(ngModel)]="fechaIda"/>
+    <br>
+    <label>Fecha Vuelta: </label>
+    <input type="date" value="fechaVuelta" [(ngModel)]="fechaVuelta"/>
+    <br>
+<div>
+    <label for="">Numero de pasajeros: </label>
+    <input type="number"[(ngModel)]="numPasajero">
+    <br>
+<button (click)="mostrarInfo()">Mostrar Información</button>
+
+
+

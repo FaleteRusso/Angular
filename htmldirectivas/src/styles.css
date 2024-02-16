@@ -1,0 +1,73 @@
+ body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px;
+}:root{
+    color-scheme: light dark;
+}
+     h1 {
+        text-align: center;
+        font-size: 2em;
+        margin-bottom: 10px;
+        color: #08bc2c;
+      }
+      
+      label {
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+      
+      /* Estilos para los selectores */
+      
+      select {
+        padding: 5px;
+        border: 1px solid #000000;
+        border-radius: 5px;
+        width: 100%;
+      }
+      
+      /* Estilos para los campos de fecha */
+      
+      input[type="date"] {
+        padding: 5px;
+        border: 1px solid #000000;
+        border-radius: 5px;
+        width: 100%;
+      }
+      
+      /* Estilos para el campo de número de pasajeros */
+      
+      input[type="number"] {
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 100%;
+      }
+      
+      /* Estilos para el botón */
+      
+      button {
+        padding: 10px 20px;
+        background-color: #339a48;
+        color: #b6f6ad;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100%;
+      }
+      
+      button:hover {
+        background-color: #122b0c;
+      }
+      
+      /* Estilos adicionales */
+      
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .form-group {
+        margin-bottom: 10px;
+      }
+      
