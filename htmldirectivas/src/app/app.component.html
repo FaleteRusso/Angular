@@ -1,5 +1,10 @@
-<app-empleado-dinamico></app-empleado-dinamico>
-<hr>
-<app-arma-pc></app-arma-pc>
-<hr>
-<app-reservabiaje></app-reservabiaje>
+
+<h1>Angular Router</h1>
+<nav>
+<a routerLink="/arma" routerLinkActive="active" ariaCurrentWhenActive="page">Arma tu PC</a>
+<br>
+<a routerLink="/reserva" routerLinkActive="active" ariaCurrentWhenActive="page">Reserva Viaje</a>
+<br>
+<a routerLink="/empleado" routerLinkActive="active" ariaCurrentWhenActive="page">Registro empleado</a>
+</nav>
+<router-outlet></router-outlet>

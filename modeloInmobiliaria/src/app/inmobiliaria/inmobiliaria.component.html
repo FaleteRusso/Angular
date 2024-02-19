@@ -1,0 +1,19 @@
+<h1>Inmobiliaria RepHouse</h1>
+<div>
+    <table>
+        <tr>
+            <th>referencia</th>
+            <th>imagen</th>
+            <th>descripcion</th>
+             </tr>
+        
+            @for(elemento of referencias; track elemento.referencia){
+
+            <tr>
+            <td>{{elemento.referencia}}</td>
+            <td><img width="170px" src="{{elemento.imagen}}" alt="{{elemento.descripcion}}"></td>
+            <td>{{elemento.descripcion}}</td>
+            </tr>
+        }
+        </table>
+</div>
