@@ -8,6 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './detalle-inmobiliaria.component.css'
 })
 export class DetalleInmobiliariaComponent {
-referencia:number = 0;
+
 
 }

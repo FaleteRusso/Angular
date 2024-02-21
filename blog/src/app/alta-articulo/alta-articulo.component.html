@@ -1,0 +1,16 @@
+<h1>Alta articulo</h1>
+<div>
+<label>Id Articulo</label>
+<input type="text" [(ngModel)]="articulo.id">
+<br>
+<label>Titulo: </label>
+<input type="text" [(ngModel)]="articulo.titulo">
+<br>
+<label>Resumen</label>
+<input type="text" [(ngModel)]="articulo.resumen">
+<br>
+<label>Url de imagen</label>
+<input type="text" [(ngModel)]="articulo.imagen">
+<br>
+<button (click)="alta()">Guardar articulo</button>
+</div>
