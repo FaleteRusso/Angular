@@ -1,0 +1,19 @@
+<h1>Cursos</h1>
+
+Nombre:<input type="text" [(ngModel)]="curso.nombre">
+Dureccion:<input type="number" [(ngModel)]="curso.duracion">
+<select [(ngModel)]="curso.nivel">
+@for (elemento of niveles; track $index) {
+    <option [value]="elemento">{{elemento}}</option>
+}
+</select>
+<br>
+ID:
+@if(curso.id ==0){
+    <label>Nuevo</label>
+}@else {
+    <label>{{curso.id}} &nbsp;</label>
+}
+
+<button (click)="modifAltaCurso()"> Modificar </button>
+<button [routerLink]="['/']"> Cancelar </button>

@@ -1,0 +1,41 @@
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    color: #461b51;
+    margin-top: 20px;
+  }
+  
+  hr {
+    border-color: #461b51;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  
+  ul {
+    list-style: outside;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    border-bottom: 1px solid #8f8e8e;
+    padding: 10px;
+  }
+  
+  li:hover {
+    background-color: #b700ff;
+  }
+  
+  button {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    background-color: #560e6e;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+  }
+  
+  button:hover {
+    background-color: #a253a8;
+  }

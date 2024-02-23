@@ -1,0 +1,61 @@
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    color: #461b51;
+    margin-top: 20px;
+  }
+  
+  form {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #461b51;
+    margin-bottom: 10px;
+  }
+  
+  input {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #461b51;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 300px;
+  }
+  
+  input:hover {
+    background-color: #d5d5d5;
+  }
+  
+  select {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #8826a0;
+    border: 1px solid #8a8888;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 300px;
+  }
+  
+  select:hover {
+    background-color: #b700ff;
+  }
+  
+  button {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    background-color: #560e6e;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+  }
+  
+  button:hover {
+    background-color: #a253a8;
+  }
