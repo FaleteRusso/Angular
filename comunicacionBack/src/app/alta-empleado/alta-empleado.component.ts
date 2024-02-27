@@ -1,8 +1,10 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { EmpleadoService } from '../_servicio/empleado.service';
 import { Empleado } from '../_modelo/empleado';
 import { FormsModule } from '@angular/forms';
+import { Observable } from 'rxjs';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-alta-empleado',
@@ -16,14 +18,24 @@ e1:Empleado={
   "idEmpleado": 0,
   "nombreEmpleado": "",
   "dni": "",
-  "sueldo": 0
-}
+  "sueldo": 0}
+@Output() avisoPadre:EventEmitter<Observable<Empleado[]>>=new EventEmitter();
 
-  constructor(private servicio:EmpleadoService){}
+
+  constructor(private servicio:EmpleadoService,
+    private route: ActivatedRoute,
+    private router: Router){}
 
 altaEmpleado(){
-  this.servicio.alta(this.e1).subscribe(()=>console.log("se dio de alta"));
-
+  this.servicio.alta(this.e1).subscribe(()=>
+  {console.log("se dio de alta");
+  this.servicio.listar().subscribe(data =>
+  {this.servicio.empleadoCambio.next(data)})})
+  this.router.navigate([''])
+}
+altaEmpleadoHP(){
+  this.servicio.alta(this.e1).subscribe(()=>
+  this.avisoPadre.emit(this.servicio.listar()));
 }
 
 }
